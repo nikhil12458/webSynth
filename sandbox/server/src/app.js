@@ -7,7 +7,7 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/api/sandbox", (req, res) => {
+app.get("/api/sandbox/health", (req, res) => {
   res.status(200).json({
     message: "Sandbox api is healthy",
     status: "ok",
